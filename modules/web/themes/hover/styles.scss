@@ -39,6 +39,30 @@
     border-right: none;
     color: $petclinic-main-color;
 
+    // Messages adjustments
+    .c-sidemenu-item.messages-petclinic-style :focus,
+    .c-sidemenu-item.messages-petclinic-style :hover,
+    .c-sidemenu-item-focused.messages-petclinic-style {
+      background-color: $petclinic-main-color;
+    }
+
+    .c-sidemenu-item.messages-petclinic-style .c-sidemenu-item-badge  {
+      background-color: $petclinic-main-color;
+      color: white;
+    }
+
+    .c-sidemenu-item-badge:hover,
+    .c-sidemenu-item-badge:focus,
+    .c-sidemenu-item-badge:selected {
+      color: $petclinic-main-color;
+      background-color: none !important;
+    }
+
+    .c-sidemenu-item-action.messages-petclinic-style.c-sidemenu-item-focused,
+    .c-sidemenu-item-action.messages-petclinic-style.c-sidemenu-item-selected {
+      border-right: none;
+    }
+
 
     .c-sidemenu-item-action.c-sidemenu-item-focused {
       border-right: 5px solid $petclinic-main-color;
