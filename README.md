@@ -7,7 +7,7 @@
 
 ## Example functionality
 
-This example uses the Petclinic example project to demonstrate the capabilities of the user-inbox addon.
+This example uses the Petclinic example project to demonstrate the capabilities of the [user-inbox](https://github.com/mariodavid/cuba-component-user-inbox) add-on.
 
 ### 1. Manual Message sending
 

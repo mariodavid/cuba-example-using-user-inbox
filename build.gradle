@@ -4,6 +4,9 @@ buildscript {
     repositories {
         mavenLocal()
         maven {
+            url 'https://dl.bintray.com/mariodavid/cuba-components'
+        }
+        maven {
             url 'https://dl.bintray.com/cuba-platform/main'
         }
         jcenter()
@@ -40,7 +43,7 @@ cuba {
 
 dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
-    appComponent('de.diedavids.cuba.userinbox:user-inbox-global:0.7.0-SNAPSHOT')
+    appComponent('de.diedavids.cuba.userinbox:user-inbox-global:0.7.0')
 
 }
 
