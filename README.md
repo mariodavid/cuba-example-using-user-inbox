@@ -1,40 +1,34 @@
-# CUBA Petclinic
+# CUBA Petclinic - Using User-Inbox
 
 <p align="center">
   <img src="https://github.com/cuba-platform/cuba-petclinic/blob/master/modules/web/themes/hover/branding/petclinic_logo_full.png"/>
 </p>
 
 
-CUBA Petclinic is a CUBA platform example application dealing with the domain of a petclinic. It is based on the commonly known [Spring Petclinic](https://github.com/spring-projects/spring-petclinic) example.
+## Example functionality
 
-The CUBA Petclinic application deals with the domain of a Pet clinic and the associated business workflows to manage a pet clinic.
+This example uses the Petclinic example project to demonstrate the capabilities of the user-inbox addon.
 
-## Online Demo
+### 1. Manual Message sending
 
-You can find the CUBA Petclinic as an online hosted example here: [CUBA Petclinic Online Demo](https://demo4.cuba-platform.com/petclinic)
+It is possible to manually send messages via the UI to other users:
 
+![send message manually](/img/1-send-message-manually.png)
 
-## Application overview
+![instant-launcher-overview](/img/1-send-message-manually-overview.gif)
 
-<a href="https://raw.githubusercontent.com/cuba-platform/cuba-petclinic/master/img/cuba-petclinic-overview.gif"><img src="https://raw.githubusercontent.com/cuba-platform/cuba-petclinic/master/img/login-screen.png"/></a>
+### 2. Read Message
 
+The receiver of the Messages is able to have an inbox functionality
 
-## Domain model
+![user inbox](/img/4-user-inbox.png)
 
+![read message](/img/2-read-message.png)
 
-![CUBA Petclinic Domain model](https://github.com/cuba-platform/cuba-petclinic/blob/master/img/domain-model.png)
+### 3. Automatic Message Sending
 
+Additionally it is possible to automatically / semi-automatically send messages to users with links to entities:
 
-## starting the application
-
-#### start database
-```
-./start-db.sh
-```
-
-#### start application
-```
-./restart-server.sh
-```
-
-
+![share entities](/img/3-share-entities.png)
+![share entities overview](/img/3-share-entities-overview.gif)
+![programmatic notification sending](/img/5-programmatic-notification-sending-overview.gif)
