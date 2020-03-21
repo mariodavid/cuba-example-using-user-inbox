@@ -13,7 +13,7 @@ This example uses the Petclinic example project to demonstrate the capabilities 
 
 It is possible to manually send messages via the UI to other users:
 
-![send message manually](/img/1-send-message-manually.png)
+![send message manually](/img/1-send-message-manually-editor.png)
 
 ![instant-launcher-overview](/img/1-send-message-manually-overview.gif)
 
