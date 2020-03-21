@@ -6,10 +6,9 @@
     <data>
         <instance id="visitDc"
                   class="com.haulmont.sample.petclinic.entity.visit.Visit"
-                  view="visit-with-pet">
+                  view="visit-with-pet-and-vet">
             <loader/>
         </instance>
-
         <collection id="petsDc" class="com.haulmont.sample.petclinic.entity.pet.Pet" view="_base">
             <loader>
                 <query>
@@ -17,20 +16,21 @@
                 </query>
             </loader>
         </collection>
+        <collection id="treatingVetsDc" class="com.haulmont.sample.petclinic.entity.vet.Vet" view="_minimal">
+            <loader>
+                <query>select e from petclinic_Vet e</query>
+            </loader>
+        </collection>
     </data>
-
-    <dialogMode height="600"
-                width="800"/>
-
     <layout expand="editActions" spacing="true">
         <form id="fieldGroup" dataContainer="visitDc">
             <column width="250px">
                 <dateField property="visitDate"/>
                 <textArea rows="5" property="description"/>
                 <lookupPickerField property="pet" optionsContainer="petsDc"/>
+                <lookupField id="treatingVetField" property="treatingVet" optionsContainer="treatingVetsDc"/>
             </column>
         </form>
-
         <hbox id="editActions" spacing="true">
             <button action="windowCommitAndClose"/>
             <button action="windowClose"/>
